@@ -1,0 +1,51 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="668.5" scrolly="375.5" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="668.111786982713" scrolly="375.362750507612" scale="0.8947460577203605">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setVectorValue" id="ba!Z)74N[P!Fy=,RPO=5" x="130" y="-310">
+      <field name="VALUE_NAME">X</field>
+      <value name="VALUE">
+        <shadow type="math_number" id="DFCXWiN@tF((B(HeH*6D">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenDraggedOver" id="(!Hyn_m[Ha`,JX^g!etj" x="-630" y="-210">
+      <field name="X_RAY">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="G/!$JyxX7;U?neMAnXs-">
+          <field name="FIELDNAME">mechanism_slider_depth_left</field>
+        </shadow>
+      </value>
+      <statement name="DO_MOVE">
+        <block type="dragMove" id="j:YO3D.WzZ!wo|qk/1p{">
+          <field name="MODE">Z</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="y#jxT=(X-JV0K=3,2)FY">
+              <field name="FIELDNAME">mechanism_slider_depth_left</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMorphFactor" id="A1$q[_vhM6RSK1z)9u#J">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+              <field name="TARGET_NAME">Nose long</field>
+              <value name="OBJ_NAME">
+                <shadow type="objectList" id="]aGbeaFIQQ#P$)D!I53p">
+                  <field name="FIELDNAME">ZBrushPolyMesh3D.001</field>
+                </shadow>
+              </value>
+              <value name="FACTOR">
+                <shadow type="math_number" id="3#X9v7V2I/V__Do,6^F=">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="855.0359619140625" viewport-y="207.3912353515625" viewport-w="605.2" viewport-h="413.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

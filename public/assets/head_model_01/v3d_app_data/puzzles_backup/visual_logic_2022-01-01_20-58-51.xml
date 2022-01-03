@@ -1,0 +1,163 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1103.4999999999995" scrolly="375.49999999999994" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="C(=BH*m:lzWG1($t6uiM" x="-310" y="-250">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="261.63727398409424" scrolly="394.2131982395237" scale="0.7448519717123376">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="{b~dc:(jL)^PD0qr{J.d" type="">currentnl</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="math_constrain" id="V~MO-m!J}cgT4PP.Fx;/" x="-110" y="-450"/>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="QC_vF@o]=VP/J+Z|V~E:" x="-348" y="-338">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="tNI9nF4_/aS#E({]LKTc">
+          <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="whenDraggedOver" id="(!Hyn_m[Ha`,JX^g!etj">
+          <field name="X_RAY">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="G/!$JyxX7;U?neMAnXs-">
+              <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+            </shadow>
+          </value>
+          <statement name="DO_MOVE">
+            <block type="dragMove" id="j:YO3D.WzZ!wo|qk/1p{">
+              <field name="MODE">Z</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="y#jxT=(X-JV0K=3,2)FY">
+                  <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="M3x38*e8HKyoJ/R(]8pM">
+                  <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">currentnl</field>
+                  <value name="VALUE">
+                    <block type="math_arithmetic" id="enkq`/Fe?EG1aO#)`8:q">
+                      <field name="OP">ADD</field>
+                      <value name="A">
+                        <shadow type="math_number" id="s7FVmj+!{.{+4OV-Q)K4">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="getObjTransform" id="_cHV]E5g1AirJ]nPVGg7">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="false"></mutation>
+                          <field name="MODE">position</field>
+                          <field name="COORD">z</field>
+                          <value name="TARGETOBJ">
+                            <shadow type="objectList" id="B4cLme#5972(~di!Mcx7">
+                              <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="G]N[c-AiiI?61vQ4%}}t">
+                          <field name="NUM">-0.195</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="objConstraintAddLimit" id="(qT)YO%Ehid:t%{,#QCy">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" mode="POS_Z"></mutation>
+                      <field name="MODE">POS_Z</field>
+                      <field name="DIST_LIMIT_MODE">LIMITDIST_ONSURFACE</field>
+                      <value name="CONSTRAINT">
+                        <shadow type="text" id="*6h3tyjF3c)wSSt230VC">
+                          <field name="TEXT">myConst</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="CdEQZ*+Fl|:N#IiIl!u@">
+                          <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+                        </shadow>
+                      </value>
+                      <value name="MIN">
+                        <shadow type="math_number" id="rQK`l/`dD:=A{#[tTPr;">
+                          <field name="NUM">-0.4</field>
+                        </shadow>
+                      </value>
+                      <value name="MAX">
+                        <shadow type="math_number" id="VC_MyTs|S*_0u5D;Q]Z:">
+                          <field name="NUM">0</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setMorphFactor" id="A1$q[_vhM6RSK1z)9u#J">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+                          <field name="TARGET_NAME">Nose long</field>
+                          <value name="OBJ_NAME">
+                            <shadow type="objectList" id="]aGbeaFIQQ#P$)D!I53p">
+                              <field name="FIELDNAME">ZBrushPolyMesh3D.001</field>
+                            </shadow>
+                          </value>
+                          <value name="FACTOR">
+                            <shadow type="math_number" id="3#X9v7V2I/V__Do,6^F=">
+                              <field name="NUM">0</field>
+                            </shadow>
+                            <block type="math_arithmetic" id="1gl@!gTlq~FRDlWi_UI=">
+                              <field name="OP">MULTIPLY</field>
+                              <value name="A">
+                                <shadow type="math_number" id="2tP,AKV%m*1b59W,([[.">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="variables_get" id=".bj`ui`u=k%nzKmv$.on">
+                                  <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">currentnl</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="%C|DzyZf@]4;3:o!SC%M">
+                                  <field name="NUM">-25</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="updateTextObject" id="G.a2Uzk~@/]}-(!edLr^">
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="tb=]]gdg8)uWr)ILp+X)">
+                                  <field name="FIELDNAME">Textobject</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE2">
+                                <shadow type="text" id="#69Qa_UJTJtD$SU0=0`K">
+                                  <field name="TEXT">Hello, Verge!</field>
+                                </shadow>
+                                <block type="variables_get" id="8J;/F%17eEX)bLnLELOL">
+                                  <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">currentnl</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="@`5pMgOnwN~}*;N2MGq7" x="390" y="-370">
+      <field name="TEXT">Hello, Verge!</field>
+    </block>
+  </tab>
+  <editorsettings viewport-x="936.3391845703125" viewport-y="51.57206726074219" viewport-w="654.659" viewport-h="596.311" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

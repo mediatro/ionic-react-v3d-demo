@@ -1,0 +1,74 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="668.5" scrolly="375.49999999999994" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="C(=BH*m:lzWG1($t6uiM" x="-310" y="-250">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="421.5988516535075" scrolly="602.6235808067703" scale="0.8999999999999985">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setVectorValue" id="ba!Z)74N[P!Fy=,RPO=5" x="110" y="-450">
+      <field name="VALUE_NAME">X</field>
+      <value name="VALUE">
+        <shadow type="math_number" id="DFCXWiN@tF((B(HeH*6D">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="QC_vF@o]=VP/J+Z|V~E:" x="-410" y="-370">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="tNI9nF4_/aS#E({]LKTc">
+          <field name="FIELDNAME">mechanism_slider_depth_left</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="whenDraggedOver" id="(!Hyn_m[Ha`,JX^g!etj">
+          <field name="X_RAY">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="G/!$JyxX7;U?neMAnXs-">
+              <field name="FIELDNAME">mechanism_slider_depth_left</field>
+            </shadow>
+          </value>
+          <statement name="DO_MOVE">
+            <block type="dragMove" id="j:YO3D.WzZ!wo|qk/1p{">
+              <field name="MODE">Y</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="y#jxT=(X-JV0K=3,2)FY">
+                  <field name="FIELDNAME">mechanism_slider_depth_left</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMorphFactor" id="A1$q[_vhM6RSK1z)9u#J">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+                  <field name="TARGET_NAME">Nose short</field>
+                  <value name="OBJ_NAME">
+                    <shadow type="objectList" id="]aGbeaFIQQ#P$)D!I53p">
+                      <field name="FIELDNAME">ZBrushPolyMesh3D.001</field>
+                    </shadow>
+                  </value>
+                  <value name="FACTOR">
+                    <shadow type="math_number" id="3#X9v7V2I/V__Do,6^F=">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="925.0117919921875" viewport-y="37.75053405761719" viewport-w="605.2" viewport-h="413.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

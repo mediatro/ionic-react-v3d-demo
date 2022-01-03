@@ -1,0 +1,404 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="775.5051431043732" scrolly="437.95271869194676" scale="0.9000000000000004">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="bmyS%V]O,$4zFg*)zEjZ" type="">item</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="C(=BH*m:lzWG1($t6uiM" x="-790" y="-370">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">FALSE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text_append" id="Ee+#m_Ik)dF(4n}eRcY3" x="-530" y="-170">
+      <field name="VAR" id="bmyS%V]O,$4zFg*)zEjZ">item</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="false" scrollx="167.46170112576715" scrolly="444.8137937997567" scale="0.707552247172198">
+    <block xmlns="https://developers.google.com/blockly/xml" type="updateTextObject" id="faR3ULRhO%,b/keS@o}]" x="-90" y="-350">
+      <value name="VALUE1">
+        <shadow type="objectList" id="{1[3Bp5ptIb!zu?,g302">
+          <field name="FIELDNAME">Textobject</field>
+        </shadow>
+      </value>
+      <value name="VALUE2">
+        <shadow type="text" id="a:E`WmVCxSRh+1rl|T^(">
+          <field name="TEXT">Hello, Verge!</field>
+        </shadow>
+        <block type="text_join" id=".3sA%Uwx0/6OKLBpFb$*">
+          <mutation items="1"/>
+          <value name="ADD0">
+            <block type="getObjTransform" id="j1h*/AlChvaF!Cw|v5l8">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="false"></mutation>
+              <field name="MODE">position</field>
+              <field name="COORD">y</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="*^Gg[ajN-,$1Bmtp(~7c">
+                  <field name="FIELDNAME">mechanism_chin-ball</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+  </tab>
+  <tab name="nose-length" type="SecondaryTab" active="true" scrollx="151.12119664304183" scrolly="43.57176346155048" scale="0.7520832022961504">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="{b~dc:(jL)^PD0qr{J.d" type="">current-nl</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="textMultiline" id="z`L#rE$^d_d`fEHsHF.3" x="70" y="30">
+      <field name="HIGHLIGHT_MODE">text</field>
+      <field name="TEXT">Example Puzzle for dealing with the 2 nose shape morphs. This concept will be used for any other morph, too.&#10;&#10;</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="tweenCameraExt" id="u#3t2y]rADT^G;GB$XRR" x="70" y="190">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+      <field name="MOVEMENT_TYPE">LINEAR</field>
+      <value name="POSITION">
+        <block type="getObjDirection" id="nwk/vX+oZB4$dXcaucog">
+          <field name="COORD">X</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="0HCLd_J!Kx(OB-St+ZaA">
+              <field name="FIELDNAME">Lamp</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <value name="LOOKAT">
+        <block type="getObjDirection" id="#pXE=HA0R9e+zCo1`f)6">
+          <field name="COORD">X</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="cA[1tk(#{$?Q{]k_tDo+">
+              <field name="FIELDNAME">ZBrushPolyMesh3D.001</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number" id="2p#g_+tJZ3XR)tKYJ%b~">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="`7OaM;%rgVb?{G+i0@6?" x="70" y="330">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="ekeh8M.hvZDxUlQpF@.k">
+          <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playSound" id="#nDhQi*5)A8/rdUg`fHn">
+          <field name="LOOP">FALSE</field>
+          <value name="VALUE">
+            <block type="loadSoundAdv" id="!%|?lxes8f~Uw[2-ctrt">
+              <field name="TYPE">SOUND</field>
+              <value name="URL">
+                <shadow type="text" id="hX~)/R7RlZY(IcVl7:I[">
+                  <field name="TEXT">nose-intro.mp3</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="whenDraggedOver" id="vhR1:r-It[1DCZ3s-uRB">
+              <field name="X_RAY">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="1I1t3Y+PY_(%ysA^D_)2">
+                  <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+                </shadow>
+              </value>
+              <statement name="DO_MOVE">
+                <block type="dragMove" id="hMLVlh7oW+fUDP^m)i=@">
+                  <field name="MODE">Z</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="mf@7=joQ7n,l4Ox3%Z6k">
+                      <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="%SF9ZMO83h.myeQ*@73-">
+                      <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">current-nl</field>
+                      <value name="VALUE">
+                        <block type="math_constrain" id="5ln1VN%H70/jj|TX?~i{">
+                          <value name="VALUE">
+                            <block type="math_arithmetic" id="|j-H45fT6-3uIcTK.g#G">
+                              <field name="OP">ADD</field>
+                              <value name="A">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="getObjTransform" id="Ni9;EV()_EfFU.s}4%nZ">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="false"></mutation>
+                                  <field name="MODE">position</field>
+                                  <field name="COORD">z</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="aIE2+Y4.mUPr4`3~k-@_">
+                                      <field name="FIELDNAME">mechanism_slider_nose_tip</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="el_b!x%rgL9#DI_E2PJ.">
+                                  <field name="NUM">-0.195</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="LOW">
+                            <block type="math_number" id="9k;ivw)id1LDB1J%upPo">
+                              <field name="NUM">-0.035</field>
+                            </block>
+                          </value>
+                          <value name="HIGH">
+                            <block type="math_number" id="q.czQLSnvYGe6]YRuNGY">
+                              <field name="NUM">0.035</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="controls_ifelse" id="{7LP]Fr_-b/BGzsnR@Hn">
+                          <value name="IF0">
+                            <block type="math_number_property" id="c0zP`i6C`}#~Wy.$[:=1">
+                              <mutation divisor_input="false"/>
+                              <field name="PROPERTY">POSITIVE</field>
+                              <value name="NUMBER_TO_CHECK">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="variables_get" id="9MsbM.]#=vt%]{SKY,bW">
+                                  <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">current-nl</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="setMorphFactor" id="kXqXY9#OGVEMD65XM8,M">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+                              <field name="TARGET_NAME">Nose short</field>
+                              <value name="OBJ_NAME">
+                                <shadow type="objectList" id="5~G%W@cT68kn0EbDDKG*">
+                                  <field name="FIELDNAME">ZBrushPolyMesh3D.001</field>
+                                </shadow>
+                              </value>
+                              <value name="FACTOR">
+                                <shadow type="math_number">
+                                  <field name="NUM">0</field>
+                                </shadow>
+                                <block type="math_arithmetic" id="H^BcA.+9|m3TZAkd9nwH">
+                                  <field name="OP">MULTIPLY</field>
+                                  <value name="A">
+                                    <shadow type="math_number">
+                                      <field name="NUM">2</field>
+                                    </shadow>
+                                    <block type="variables_get" id=",}EAHfyE_=v2Z@bffxGf">
+                                      <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">current-nl</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <shadow type="math_number" id="pukVitiU{-V-s2KKX6BL">
+                                      <field name="NUM">25</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                          <statement name="ELSE">
+                            <block type="setMorphFactor" id="WTU`X~{hU(O!j]A!D@5W">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+                              <field name="TARGET_NAME">Nose long</field>
+                              <value name="OBJ_NAME">
+                                <shadow type="objectList" id="q!:pkJwUlk1}#aV}8H_e">
+                                  <field name="FIELDNAME">ZBrushPolyMesh3D.001</field>
+                                </shadow>
+                              </value>
+                              <value name="FACTOR">
+                                <shadow type="math_number">
+                                  <field name="NUM">0</field>
+                                </shadow>
+                                <block type="math_arithmetic" id="3o;6-3KWYrZ.lUM[e:pV">
+                                  <field name="OP">MULTIPLY</field>
+                                  <value name="A">
+                                    <shadow type="math_number">
+                                      <field name="NUM">2</field>
+                                    </shadow>
+                                    <block type="variables_get" id="8lrIFYDoON-V(_G=2P{C">
+                                      <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">current-nl</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <shadow type="math_number" id=":ZqPM6zf9@Ktv.80yf6d">
+                                      <field name="NUM">-25</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="updateTextObject" id="r*Q={3QfZg7S@.;O^Ix:">
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="O/JenZa_KQ8Q`cZ$i:tC">
+                                  <field name="FIELDNAME">Textobject</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE2">
+                                <shadow type="text">
+                                  <field name="TEXT">Hello, Verge!</field>
+                                </shadow>
+                                <block type="variables_get" id="Edv}#(^W]6im3owhzJr`">
+                                  <field name="VAR" id="{b~dc:(jL)^PD0qr{J.d">current-nl</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="chin" type="SecondaryTab" active="false" scrollx="-72.6182730326068" scrolly="7.591693966618308" scale="0.8364857768130286">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="uA-uu03L+7Y%r#^u51w;" type="">current-cb</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="vO2guT2}~Kvsvj6?9%Mn" x="130" y="290">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="E*0Pj$]*f|cTqV-Qm-K[">
+          <field name="FIELDNAME">mechanism_chin-ball</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playSound" id="]lyI$DbR~)yf@)/Q`;a6">
+          <field name="LOOP">FALSE</field>
+          <next>
+            <block type="whenDraggedOver" id="%HK!TJzT2g5#Pdep%Adc">
+              <field name="X_RAY">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id=")~l[y~BPW|UPN|rR}.s*">
+                  <field name="FIELDNAME">mechanism_chin-ball</field>
+                </shadow>
+              </value>
+              <statement name="DO_MOVE">
+                <block type="dragMove" id="xc_9fS]d9V`onJ-|kJw#">
+                  <field name="MODE">Y</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="hQ{y5E?x)Qb0;V]o){bL">
+                      <field name="FIELDNAME">mechanism_chin-ball</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="%o1yh1ANf8i(Rt0IeYDK">
+                      <field name="VAR" id="uA-uu03L+7Y%r#^u51w;">current-cb</field>
+                      <value name="VALUE">
+                        <block type="math_arithmetic" id="`zP.oZ?c=v.v0Vi9;FnX">
+                          <field name="OP">ADD</field>
+                          <value name="A">
+                            <shadow type="math_number">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="getObjTransform" id="$8X-Bwcf;VatdL6RX!Kt">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="false"></mutation>
+                              <field name="MODE">position</field>
+                              <field name="COORD">y</field>
+                              <value name="TARGETOBJ">
+                                <shadow type="objectList" id="I)afrQ01?Sn@7Bui^f{q">
+                                  <field name="FIELDNAME">mechanism_chin-ball</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="Q|3U4NjSMTRR9+,MtQA2">
+                              <field name="NUM">0.14</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setMorphFactor" id="ln4jz}o@aaqCPW6G1Na8">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+                          <field name="TARGET_NAME">Chin Ball</field>
+                          <value name="OBJ_NAME">
+                            <shadow type="objectList" id="MZ7z8ZGI~R[/F~EyB7Gh">
+                              <field name="FIELDNAME">ZBrushPolyMesh3D.001</field>
+                            </shadow>
+                          </value>
+                          <value name="FACTOR">
+                            <shadow type="math_number" id="2lOb?Ziep[w-(UkCef9l">
+                              <field name="NUM">0</field>
+                            </shadow>
+                            <block type="math_arithmetic" id="QV.Y/)*Ajo]%I,/S@ieI">
+                              <field name="OP">MULTIPLY</field>
+                              <value name="A">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="variables_get" id="lE99Ir?O3WK6=zzSw93z">
+                                  <field name="VAR" id="uA-uu03L+7Y%r#^u51w;">current-cb</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="32Jg]8Toh17$3Z`OaJ)I">
+                                  <field name="NUM">-20</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="updateTextObject" id="SD|ttYbjzDdn[WsRs9=p">
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="0I8yx$w.D64R@!Uy^_gI">
+                                  <field name="FIELDNAME">Textobject</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE2">
+                                <shadow type="text">
+                                  <field name="TEXT">Hello, Verge!</field>
+                                </shadow>
+                                <block type="variables_get" id="Z9vsQx)8Luu1gSPzKw8+">
+                                  <field name="VAR" id="uA-uu03L+7Y%r#^u51w;">current-cb</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="971.9786499023437" viewport-y="46.088958740234375" viewport-w="601.22" viewport-h="667.516" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
